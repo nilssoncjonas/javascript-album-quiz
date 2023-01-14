@@ -1,0 +1,12 @@
+@use 'mixin' as *;
+.mainGame {
+  outline: 1px solid cornflowerblue;
+  margin-top: 1rem;
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    @include paragraph;
+    
+  }
+}

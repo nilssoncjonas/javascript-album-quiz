@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="/dist/css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>JavaScript Quiz</h1>
       <h2>Music album edition</h2>
-      <p>This is a quiz game built with javascript,<br> when the game starts a album is randomly shown, you get four randomly generated answers to choose from,<br> but only one i correct.</p>
-      <p>How many points can You get?</p>
+      <span class="headerParaWrap">
+        <p>This is a quiz game built with javascript,<br> when the game starts a album is randomly shown, you get four randomly generated answers to choose from,<br> but only one i correct.</p>
+        <p>How many points can You get?</p>
+      </span>
     </header>
     
     <main>
@@ -35,9 +37,9 @@
         </span>
       </div>
       
-      <div class="hide" id="mainGameView">
+      <div class="hide mainGame" id="mainGameView">
         <h2 id="title"></h2>
-        <h3 id="round"></h3>
+        <p id="round"></p>
         <div>
           <div>
             <img src="" alt="Which Album Is This" id="img-whodis" />
@@ -67,9 +69,9 @@
       </button>
 
 
-    <footer>
+<!--     <footer>
       Jonas Nilsson &copy; 2022
-    </footer>
+    </footer> -->
 
     <script src="/js/albums.js"></script>
     <script src="/js/script.js"></script>

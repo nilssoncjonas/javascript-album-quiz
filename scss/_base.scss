@@ -1,5 +1,6 @@
+@use 'mixin' as *;
 * {
-  outline: 1px solid cornflowerblue;
+  // outline: 1px solid cornflowerblue;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 .buttonSelect {
   font-family: sleepgrunge;
   color: #1a1a1a;
-
   margin: 2rem auto;
   padding: 0.5rem 0.75rem;
   display: block;
@@ -49,22 +49,11 @@ header {
   width: 100vw;
   padding-top: 1rem;
   text-align: center;
-  
+   
   p {
-    font-family: sleepgrunge;
-    color: #1a1a1a;
-    max-width: 450px;
+    @include paragraph;
+    max-width: 452px;
     padding: 0.3rem;
     margin: 1.5rem auto;
   }
-}
-main {
-  margin-bottom: 10rem;
-}
-footer {
-  font-family: sleepgrunge;
-  color: #1a1a1a;
-  width: 100vw;
-  text-align: center;
-  padding: 1rem 0;
 }
