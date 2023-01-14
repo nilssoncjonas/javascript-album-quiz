@@ -1,0 +1,25 @@
+@media screen and (min-width: 666px) {
+  * {
+    outline: 1px solid red;
+  }
+  body {
+    margin-top: 2.5%;
+  }
+.buttonSelectWrap {
+  display: flex;
+  justify-content: center;
+}
+  .buttonSelect {
+    display:inline;
+    margin: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    outline: 1px solid greenyellow;
+  }
+  body {
+    margin-top: 5%;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript | Quiz | Music Album edition</title>
+    <!-- Bootstrap v.5.2.3 CSS only -->
+<!--     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="/dist/css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Quiz</h1>
+      <h2>Music album edition</h2>
+      <p>This is a quiz game built with javascript,<br> when the game starts a album is randomly shown, you get four randomly generated answers to choose from,<br> but only one i correct.</p>
+      <p>How many points can You get?</p>
+    </header>
+    
+    <main>
+      <div id="start">
+        <h2>Choose Your Level</h2>
+        <span class="buttonSelectWrap">
+          <button class="buttonSelect" id="easyBtn" value="10"><span>Easy</span> 10 albums
+          </button>
+          <button class="buttonSelect" id="mediumBtn" value="20"><span>Medium</span> 25 albums
+          </button>
+          <button class="buttonSelect" id="hardBtn"><span>Hard</span> All 50 albums</button>
+        </span>
+      </div>
+      
+      <div class="hide" id="mainGameView">
+        <h2 id="title"></h2>
+        <h3 id="round"></h3>
+        <div>
+          <div>
+            <img src="" alt="Which Album Is This" id="img-whodis" />
+          </div>
+          <div id="nameWrap">
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <div class="hide" id="result"></div>
+
+      <div class="hide" id="highScoreWrap">
+        <h4>HIGHSCORE</h4>
+        <div id="score">
+			  </div>
+      </div>
+
+      <div id="resultWrap" class="hide">
+        <h2>Results</h2>
+        <div class="lds-circle hide" id="spinner"><div></div></div>
+          <ul id="resultView"></ul>
+      </div>
+
+      <button type="reset" id="reset" class="hide">
+        Restart
+      </button>
+
+
+    <footer>
+      Jonas Nilsson &copy; 2022
+    </footer>
+
+    <script src="/js/albums.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
