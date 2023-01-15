@@ -5,20 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript | Quiz | Music Album edition</title>
-    <!-- Bootstrap v.5.2.3 CSS only -->
-<!--     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    /> -->
 
     <link rel="stylesheet" href="/dist/css/main.min.css" />
   </head>
   <body>
     <header id="header">
-      <h1>JavaScript Quiz</h1>
-      <h2>Music album edition</h2>
+      <h1>JavaScript Quiz <span>Music album edition</span></h1>
+      
       <span class="headerParaWrap">
         <p>This is a quiz game built with javascript,<br> when the game starts a album is randomly shown, you get four randomly generated answers to choose from,<br> but only one i correct.</p>
         <p>How many points can You get?</p>
@@ -28,14 +21,26 @@
     <main>
       <div id="start">
         <h2>Choose Your Level</h2>
-        <span class="buttonSelectWrap">
-          <button class="buttonSelect" id="easyBtn" value="10"><span>Easy</span> 10 albums
-          </button>
-          <button class="buttonSelect" id="mediumBtn" value="20"><span>Medium</span> 25 albums
-          </button>
-          <button class="buttonSelect" id="hardBtn"><span>Hard</span> All 50 albums</button>
-        </span>
+        <div class="buttonSelectWrap">
+          <div class="ampWrap">
+            <p class="ampText">Light</p>
+            <button class="buttonSelect" id="easyBtn" value="10">10 albums
+            </button>
+          </div>
+        
+        
+        <div class="ampWrap">
+        <p class="ampText">Medium</p>
+        <button class="buttonSelect" id="mediumBtn" value="20">25 albums
+        </button>
       </div>
+
+          <div class="ampWrap">
+            <p class="ampText">Heavy</p>
+          <button class="buttonSelect" id="hardBtn">All 50 albums
+          </button>
+      </div>
+    </div>
       
       <div class="hide mainGame" id="mainGameView">
         <h2 id="title"></h2>

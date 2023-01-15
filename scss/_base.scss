@@ -10,31 +10,41 @@
   display: none;
 }
 body {
-  height: 100%;
-  background-color: #5b5b5b;
+  height: 100vh;  
+  background-color: #ffffff;
+  background-image: url(/img/leather.webp);
+
 }
+
 h1, h2, h3, h4, h5, h6 {
+  background-color: #000000;
+  background-image: url(/img/leather.webp);
   text-align: center;
-  margin-bottom: 0.5rem;
-  font-family: metalvengeance;
-  font-weight: 100;
-  color: #1a1a1a;
-  text-shadow: 
-  0px 5px #4c4b4b,
-  0px -5px #4e4e4e;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0.2rem;
+  border-bottom: 3px  solid #b8ae79;
+  @include headingStyle;
+  font-size: 3rem;
+  letter-spacing: 6px;
 }
-.buttonSelect {
-  font-family: sleepgrunge;
-  color: #1a1a1a;
-  margin: 2rem auto;
-  padding: 0.5rem 0.75rem;
-  display: block;
-  width: 160px;
-  background-color: #4e4e4e;
-  border: 1px solid black;
+h1 {
+  padding-top: 1rem;
   span {
     display: block;
+    font-size: 2.25rem;
   }
+}
+.buttonSelectWrap {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.ampWrap {
+  width: fit-content;
+  border: 5px solid #393939;
+  border-radius: 10px;
   &:hover {
     box-shadow: 0px 1px 5px 2px rgba(18, 18, 18, 0.75);
     transform: scale(1.2);
@@ -44,10 +54,43 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease 0s;
   }
 }
+.ampText {
+  border-radius: 2px;
+  border: 2px solid #dbdbdb;
+  background-color: #000000;
+  background-image: url(/img/leather.webp);
+  width: 160px;
+  padding: 0.8rem 0.2rem 0.1rem 0.2rem;  
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: sleepgrunge;
+  font-weight: 100;
+  color: #eeeeee;
+  text-shadow: 
+  0px 1px #b8ae79,
+  0px -1px #b8ae79,
+  1px 0px #b8ae79,
+  -1px 0px #b8ae79;
+}
+
+.buttonSelect {
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  font-family: sleepgrunge;
+  color: #000000;
+  font-size: 1.2rem;
+  text-shadow: 
+  0px 2px #dbdbdb,
+  2px 0px #dbdbdb,
+  0px -2px #dbdbdb,
+  -2px 0px #dbdbdb;
+  padding: 2rem 0.75rem;
+  width: 160px;
+  background-image: url(/img/cloth.webp);
+}
 
 header {
   width: 100vw;
-  padding-top: 1rem;
   text-align: center;
    
   p {
