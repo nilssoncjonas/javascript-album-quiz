@@ -5,7 +5,7 @@
   h2 {
     font-size: 1.1rem;
     border-bottom: 2px  solid #b8ae79;
-    font-family: sleepgrunge;
+    font-family: 'RocknRoll One', sans-serif;
     font-weight: 100;
     text-shadow: none;
     box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
@@ -25,6 +25,7 @@
   border: 2px solid #b8ae79;
   
 }
+
 .name {
   padding: 0.75rem;
   width: 90%;
@@ -32,10 +33,27 @@
   margin: 0.75rem auto;
   background-color: #000000;
   background-image: url(/img/leather.webp);
-  font-family: sleepgrunge;
+  font-family: 'RocknRoll One', sans-serif;
   font-weight: 100;
   font-size: 0.8rem;
   color: #dbdbdb;
   border: 2px solid #b8ae79;
   border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
+    transition: all 0.3s ease 0s;
+  }
+  &:not(hover) {
+    transition: all 0.3s ease 0s;
+  }
+}
+.answerR {
+	background-color: rgba(144, 238, 144, 0.5);
+	transition: all 0.3s ease 0s;
+  color: #262626;
+}
+.answerW {
+	background-color: rgba(255, 182, 193, 0.5);
+	transition: all 0.3s ease 0s;
+  color: #262626;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript | Quiz | Music Album edition</title>
 
-    <link rel="stylesheet" href="/dist/css/main.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header id="header">
@@ -14,13 +14,12 @@
       
       <span class="headerParaWrap">
         <p>This is a quiz game built with javascript,<br> when the game starts a album is randomly shown, you get four randomly generated answers to choose from,<br> but only one i correct.</p>
-        <p>How many points can You get?</p>
+        <p>How many albums can You get right?</p>
       </span>
     </header>
-    
     <main>
       <div id="start">
-          <h2>Choose Your Level</h2>
+        <h2>Choose Your Level</h2>
           <div class="buttonSelectWrap">
             <div class="ampWrap">
               <p class="ampText">Light</p>
@@ -37,7 +36,7 @@
       
             <div class="ampWrap">
               <p class="ampText">Heavy</p>
-            <button class="buttonSelect" id="hardBtn">All 50 albums
+            <button class="buttonSelect" id="hardBtn">50 albums
             </button>
         </div>
       </div>
@@ -58,14 +57,14 @@
       <div class="hide" id="result"></div>
 
       <div class="hide" id="highScoreWrap">
-        <h3>HIGHSCORE</h3>
+        <h3>Highscore</h3>
         <div id="score">
 			  </div>
       </div>
 
       <div id="resultWrap" class="hide">
-        <h2>Results</h2>
-        <div class="lds-circle hide" id="spinner"><div></div></div>
+        <h3>Results</h3>
+       
           <ul id="resultView"></ul>
       </div>
 
@@ -74,9 +73,9 @@
       </button>
 
 
-<!--     <footer>
-      Jonas Nilsson &copy; 2022
-    </footer> -->
+    <footer>
+      <a href="http://www.jonasnilsson.dev">Jonas Nilsson</a> &copy; 2022
+    </footer>
 
     <script src="/js/albums.js"></script>
     <script src="/js/script.js"></script>

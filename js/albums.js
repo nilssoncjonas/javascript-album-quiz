@@ -53,8 +53,8 @@ const albums = [
   },
   {
     name: "Bob Dylan - Highway 61 Revisited", 
-    og_image: `${OG}bob-dylan-hwy-62-revisited.webp`,
-    cln_image: `${CLN}bob-dylan-hwy-62-revisited.webp`
+    og_image: `${OG}bob-dylan-hwy-61-revisited.webp`,
+    cln_image: `${CLN}bob-dylan-hwy-61-revisited.webp`
   },
   {
     name: "Boston - Boston", 
@@ -193,13 +193,13 @@ const albums = [
   },
   {
     name: "Queens Of The Stoneage - A Song For The Deaf", 
-    og_image: `${OG}queens-of-the-stoneage-a-song-for-the-deaf,webp`,
-    cln_image: `${CLN}queens-of-the-stoneage-a-song-for-the-deaf,webp`
+    og_image: `${OG}queens-of-the-stoneage-a-song-for-the-deaf.webp`,
+    cln_image: `${CLN}queens-of-the-stoneage-a-song-for-the-deaf.webp`
   },
   {
     name: "Queens Of The Stoneage - Era Vulgaris", 
-    og_image: `${OG}queens-of-the-stoneage-era-vulgaris`,
-    cln_image: `${CLN}queens-of-the-stoneage-era-vulgaris`
+    og_image: `${OG}queens-of-the-stoneage-era-vulgaris.webp`,
+    cln_image: `${CLN}queens-of-the-stoneage-era-vulgaris.webp`
   },
   {
     name: "Rage Against The Machine - Rage Against The Machine", 

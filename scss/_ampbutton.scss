@@ -3,13 +3,14 @@
    flex-direction: column;
    align-items: center;
    gap: 2rem;
-   padding-bottom: 3rem;
+   padding-bottom: 4rem;
    margin-top: 2rem;
  }
  .ampWrap {
    width: fit-content;
    border: 5px solid #393939;
    border-radius: 10px;
+   box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
  }
  .ampText {
    border-radius: 2px;
@@ -20,7 +21,7 @@
    padding: 0.8rem 0.2rem 0.1rem 0.2rem;  
    text-align: center;
    letter-spacing: 2px;
-   font-family: sleepgrunge;
+   font-family: 'RocknRoll One', sans-serif;
    font-weight: 100;
    color: #eeeeee;
    text-shadow: 
@@ -33,16 +34,33 @@
  .buttonSelect {
    border-radius: 3px;
    border: 1px solid #dbdbdb;
-   font-family: sleepgrunge;
-   color: #000000;
+   font-family: 'RocknRoll One', sans-serif;
+   color: #262626;
    font-size: 1.2rem;
+   font-weight: bold;
+   text-transform: uppercase;
    text-shadow: 
-   0px 2px #dbdbdb,
-   2px 0px #dbdbdb,
-   0px -2px #dbdbdb,
-   -2px 0px #dbdbdb;
+   0px 1px #dbdbdb,
+   1px 0px #dbdbdb,
+   0px -1px #dbdbdb,
+   -1px 0px #dbdbdb;
    padding: 2rem 0.75rem;
    width: 160px;
    background-image: url(/img/cloth.webp);
    cursor: pointer;
  }
+
+@keyframes shake {
+ 
+  0%  {transform: translate(1px, 1px) rotate(0deg)}
+  10%  {transform: translate(-1px, -2px) rotate(-1deg)}
+  20%  {transform: translate(-3px, 0px) rotate(1deg)}
+  30%  {transform: translate(3px, 2px) rotate(0deg)}
+  40%  {transform: translate(1px, -1px) rotate(1deg)}
+  50%  {transform: translate(-1px, 2px) rotate(-1deg)}
+  60%  {transform: translate(-3px, 1px) rotate(0deg)}
+  70%  {transform: translate(3px, 1px) rotate(-1deg)}
+  80%  {transform: translate(-1px, -1px) rotate(1deg)}
+  90%  {transform: translate(1px, 2px) rotate(0deg)}
+  100% {transform: translate(1px, -2px) rotate(-1deg)}
+}
