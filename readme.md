@@ -1,6 +1,6 @@
-# JavaScript Album Quiz
+# JavaScript Album Quiz 💿🎸🥁🔊🤘🏼
 
-This project was originally a quiz of guessing my classmates names in a javascript submission task. I have changed it to guess some of my favorite music albums for privacy reasons.
+This project was originally a quiz of guessing my classmates names in a javascript submission task. I have changed it to guess up to 50 of my favorite music albums for privacy reasons. Try it out...how many do YOU know?
 
 ## The project 
 

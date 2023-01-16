@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript | Quiz | Music Album edition</title>
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>JavaScript Quiz <span>Music album edition</span></h1>
+      
+      <span class="headerParaWrap">
+        <p>This is a quiz game built with javascript,<br> when the game starts a album is randomly shown, you get four randomly generated answers to choose from,<br> but only one i correct.</p>
+        <p>How many albums can You get right?</p>
+      </span>
+    </header>
+    <main>
+      <div id="start">
+        <h2>Choose Your Level</h2>
+          <div class="buttonSelectWrap">
+            <div class="ampWrap">
+              <p class="ampText">Light</p>
+              <button class="buttonSelect" id="easyBtn" value="10">10 albums
+              </button>
+            </div>
+          
+          
+          <div class="ampWrap">
+          <p class="ampText">Medium</p>
+          <button class="buttonSelect" id="mediumBtn" value="20">25 albums
+          </button>
+        </div>
+      
+            <div class="ampWrap">
+              <p class="ampText">Heavy</p>
+            <button class="buttonSelect" id="hardBtn">50 albums
+            </button>
+        </div>
+      </div>
+    </div> 
+      <div class="hide mainGame" id="mainGameView">
+        <h2 id="title"></h2>
+        <p id="round"></p>
+        <div>
+          <div>
+            <img src="" alt="Which Album Is This" id="guessImg" />
+          </div>
+          <div id="nameWrap">
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <div class="hide" id="result"></div>
+
+      <div class="hide" id="highScoreWrap">
+        <h3>Highscore</h3>
+        <div id="score">
+			  </div>
+      </div>
+
+      <div id="resultWrap" class="hide">
+        <h3>Results</h3>
+       
+          <ul id="resultView"></ul>
+      </div>
+
+      <button type="reset" id="reset" class="hide">
+        Restart
+      </button>
+
+
+    <footer>
+      <a href="http://www.jonasnilsson.dev">Jonas Nilsson</a> &copy; 2022
+    </footer>
+
+    <script src="/js/albums.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

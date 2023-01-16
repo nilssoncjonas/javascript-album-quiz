@@ -1,0 +1,18 @@
+@mixin paragraph {
+  font-family: 'RocknRoll One', sans-serif;
+  color: #262626;
+  text-align: center;
+
+}
+
+@mixin headingStyle {
+  font-family: amplify;
+  font-weight: 100;
+  color: #eeeeee;
+  text-shadow: 
+  0px 2px #b8ae79,
+  0px -2px #b8ae79,
+  2px 0px #b8ae79,
+  -2px 0px #b8ae79;
+}
+

@@ -1,0 +1,59 @@
+@use 'mixin' as *;
+.mainGame {
+  // outline: 1px solid cornflowerblue;
+  // background-color: cornflowerblue;
+  h2 {
+    font-size: 1.1rem;
+    border-bottom: 2px  solid #b8ae79;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 100;
+    text-shadow: none;
+    box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
+  }
+  p {
+    @include paragraph;
+    padding-top: 0.5rem;
+    
+  }
+}
+#guessImg {
+  width: 150px;
+  border-radius: 2px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
+  border: 2px solid #b8ae79;
+  
+}
+
+.name {
+  padding: 0.75rem;
+  width: 90%;
+  display: block;
+  margin: 0.75rem auto;
+  background-color: #000000;
+  background-image: url(/img/leather.webp);
+  font-family: 'RocknRoll One', sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: #dbdbdb;
+  border: 2px solid #b8ae79;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
+    transition: all 0.3s ease 0s;
+  }
+  &:not(hover) {
+    transition: all 0.3s ease 0s;
+  }
+}
+.answerR {
+	background-color: rgba(144, 238, 144, 0.5);
+	transition: all 0.3s ease 0s;
+  color: #262626;
+}
+.answerW {
+	background-color: rgba(255, 182, 193, 0.5);
+	transition: all 0.3s ease 0s;
+  color: #262626;
+}
