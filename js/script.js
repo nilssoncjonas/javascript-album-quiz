@@ -90,17 +90,18 @@ const startGame = (x) => {
 
 // Creating DOM
 const createDOM = () => {
+  shuffle(albumArray)
 	if (albumArray.length === 0) {
 			resetBackground();
 			resultViewDOM();
 	} else	if ( albumArray.length <= 3) {
 			resetBackground();
 			guessImg.src = albumArray[0].img
-      shuffle(names)
-
+      
 		} else {
-		names = albumArray.slice(0,4)
-		let element = ''
+    names = albumArray.slice(0,4)
+    shuffle(names)
+    let element = ''
 		for (let i = 0; i <= 3; i++) {
 			element += `<button class="name" id="name-${[i]}"> ${names[i].name}</button>`;
 		}
@@ -146,13 +147,9 @@ nameWrap.addEventListener('click', e => {
   
 	} else if (e.target.innerText === albumArray[0].name) {
 		e.target.classList.add('answerR')
-
-
 		points++
 		guesses++
-
 		answers.push({name: albumArray[0].name, img: albumArray[0].og_img, answer: 'answerR', yourAnswer: e.target.innerText})
-
 		albumArray.shift()
 		setTimeout( () => {
 			createDOM()
@@ -161,19 +158,15 @@ nameWrap.addEventListener('click', e => {
 		e.target.classList.add('answerW')
 		if (document.getElementById('name-0').innerText === albumArray[0].name ){
 			document.getElementById('name-0').classList.add('answerR')
-
 		}
 		if (document.getElementById('name-1').innerText === albumArray[0].name ){
 			document.getElementById('name-1').classList.add('answerR')
-
 		}
 		if ( document.getElementById('name-2').innerText === albumArray[0].name ){
 			document.getElementById('name-2').classList.add('answerR')
-
 		}
 		if (document.getElementById('name-3').innerText === albumArray[0].name ){
 			document.getElementById('name-3').classList.add('answerR')
-
 		}
 		guesses++
 		answers.push({name: albumArray[0].name, img: albumArray[0].og_img, answer: 'answerW', yourAnswer: e.target.innerText})
