@@ -152,7 +152,7 @@ const albums = [
     cln_image: `${CLN}metallica-master-of-puppets.webp`
   },
   {
-    name: "Metallica - Ride The Lightning ", 
+    name: "Metallica - Ride The Lightning", 
     og_image: `${OG}metallica-ride-the-lightning.webp`,
     cln_image: `${CLN}metallica-ride-the-lightning.webp`
   },
