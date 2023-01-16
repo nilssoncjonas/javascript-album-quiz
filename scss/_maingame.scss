@@ -1,12 +1,41 @@
 @use 'mixin' as *;
 .mainGame {
-  outline: 1px solid cornflowerblue;
-  margin-top: 1rem;
+  // outline: 1px solid cornflowerblue;
+  // background-color: cornflowerblue;
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    border-bottom: 3px  solid #b8ae79;
+    font-family: sleepgrunge;
+    font-weight: 100;
+    text-shadow: none;
+    box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
   }
   p {
     @include paragraph;
+    padding-top: 0.5rem;
     
   }
+}
+#guessImg {
+  width: 150px;
+  border-radius: 2px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0px 10px 40px 1px rgba(18, 18, 18, 0.75);
+  border: 2px solid #b8ae79;
+  
+}
+.name {
+  padding: 0.75rem;
+  width: 90%;
+  display: block;
+  margin: 0.75rem auto;
+  background-color: #000000;
+  background-image: url(/img/leather.webp);
+  font-family: sleepgrunge;
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: #dbdbdb;
+  border: 2px solid #b8ae79;
+  border-radius: 5px;
 }

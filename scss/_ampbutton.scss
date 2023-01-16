@@ -1,0 +1,48 @@
+.buttonSelectWrap {
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   padding-bottom: 3rem;
+   margin-top: 1rem;
+ }
+ .ampWrap {
+   width: fit-content;
+   border: 5px solid #393939;
+   border-radius: 10px;
+ }
+ .ampText {
+   border-radius: 2px;
+   border: 2px solid #dbdbdb;
+   background-color: #000000;
+   background-image: url(/img/leather.webp);
+   width: 160px;
+   padding: 0.8rem 0.2rem 0.1rem 0.2rem;  
+   text-align: center;
+   letter-spacing: 2px;
+   font-family: sleepgrunge;
+   font-weight: 100;
+   color: #eeeeee;
+   text-shadow: 
+   0px 1px #b8ae79,
+   0px -1px #b8ae79,
+   1px 0px #b8ae79,
+   -1px 0px #b8ae79;
+ }
+ 
+ .buttonSelect {
+   border-radius: 3px;
+   border: 1px solid #dbdbdb;
+   font-family: sleepgrunge;
+   color: #000000;
+   font-size: 1.2rem;
+   text-shadow: 
+   0px 2px #dbdbdb,
+   2px 0px #dbdbdb,
+   0px -2px #dbdbdb,
+   -2px 0px #dbdbdb;
+   padding: 2rem 0.75rem;
+   width: 160px;
+   background-image: url(/img/cloth.webp);
+   cursor: pointer;
+ }
