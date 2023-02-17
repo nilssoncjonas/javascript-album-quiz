@@ -4,12 +4,18 @@
   padding: 1.5rem 0;
 
   h4 {
-    @include paragraph;
+    @include paragraph;    
   }
 }
 #highScoreWrap {
   h3 {
+    text-align: center;
+    padding: 1rem 0.2rem;
+    font-display: optional;
+    @include headingStyle;
+    color: #505050;
     font-size: 3rem;
+    letter-spacing: 6px;
   }
 }
 #score {
@@ -21,6 +27,13 @@
   h3 {
     font-size: 2rem;
     margin-bottom: 3rem;
+    text-align: center;
+    padding: 1rem 0.2rem;
+    font-display: optional;
+    @include headingStyle;
+    color: #505050;
+    font-size: 3rem;
+    letter-spacing: 6px;
   }
 }
 #resultView{
